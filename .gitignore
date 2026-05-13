@@ -1,0 +1,6 @@
+# Claude Code local settings (machine-specific, not for sharing)
+.claude/settings.local.json
+
+# Obsidian workspace state (tracks open files/panels — local only)
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json

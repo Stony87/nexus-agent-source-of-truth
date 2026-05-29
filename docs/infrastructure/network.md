@@ -10,8 +10,7 @@
 |---|---|---|
 | NAS — UGREEN NASync DXP6800 Pro | 192.168.2.198 | Management UI on port 9999 |
 | VM 103 — Apps | 192.168.2.228 | Infrastructure services (see vm-layout.md) |
-| VM 104 — Hermes | 192.168.2.156 | Agent runtime — Astro, Astra |
-| Atlas — Pop!_OS laptop | 192.168.2.93 | Local LLM host (Ollama) |
+| VM 104 — Hermes | 192.168.2.156 | Agent runtime — Nexus |
 
 ## Physical Host
 

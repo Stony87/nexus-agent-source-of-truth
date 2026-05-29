@@ -29,28 +29,9 @@ All VMs run on the Proxmox host (Beelink SER5). See [network.md](network.md) for
 | Service | Role |
 |---|---|
 | hermes-gateway.service | Agent communication gateway |
-| Astro | Butler / personal assistant agent |
-| Astra | Maid / homelab operations agent |
+| Nexus | Control-plane orchestrator agent |
 
-All agent-to-agent traffic from the broader stack routes through this VM.
-
----
-
-## Non-VM Hosts
-
-### Atlas (192.168.2.93) — Pop!_OS Laptop
-
-**Purpose:** Local LLM inference host  
-**Role in stack:** TBD
-
-| Detail | Value |
-|---|---|
-| OS | Pop!_OS |
-| GPU | GTX 1660 Ti (6 GB VRAM) |
-| CPU | Intel i7-9750H |
-| RAM | 15 GB |
-| LLM runtime | Ollama (localhost:11434) |
-| Current model | qwen3:4b-instruct |
+Nexus is the only active agent. All agent traffic routes through hermes-gateway.service on this VM.
 
 ---
 
@@ -58,10 +39,7 @@ All agent-to-agent traffic from the broader stack routes through this VM.
 
 | Agent | Runs On |
 |---|---|
-| Orion (Nexus) | Windows desktop — activated per session via Claude Code |
-| Astro | VM 104 — Hermes |
-| Astra | VM 104 — Hermes |
-| Atlas | Physical laptop (192.168.2.93) |
+| Orion (Nexus) | VM 104 — Hermes (192.168.2.156) |
 
 ---
 
